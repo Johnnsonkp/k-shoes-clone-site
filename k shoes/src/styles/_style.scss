@@ -3,7 +3,6 @@ body {
     letter-spacing: normal;
     word-spacing: normal;
     margin: 0;
-    overflow-x: hidden;
 }
 :root{
     --primary-color: rgba(246, 186, 113, 1);
@@ -12,7 +11,7 @@ body {
 }
 *{
     box-sizing: border-box;
-
+    // overflow-y: hidden;
 }
 // .menu-showcase{
 //     background-color: var(--primary-color);
@@ -159,8 +158,10 @@ body {
 .menu-wrap .menu > div{
     background: var(--overlay-color);
     border-radius: 10%;
-    width: 200vw;
-    height: 180vw;
+    // width: 200vw;
+    // height: 180vw;
+    width: 100vh;
+    height: 100vh;
     display: flex;
     flex: none;
     align-items: center;
@@ -182,28 +183,40 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     display: fixed;
+    text-align: center;
 }
 .menu-wrap .menu > div > div > ul > li > a{
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
     display: fixed;
+    text-align: center;
+}
+*, #showcase .showcase-container{
+    // overflow-x: hidden;
+    
+
 }
 header{
     background-color: #f6ba71;
     background: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/home.png");
-    height: 102vh;
+    height: 110vh;
     width: 375px;
     overflow: hidden;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+
 }
 #showcase .main-nav{
-    width: 370px;
+    width: 375px;
     height: 10vh;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     background: var(--primary-color);
+    // overflow-x: hidden;
+    // overflow-y: hidden;
 }
 
 #showcase i {
@@ -213,6 +226,12 @@ header{
     display: flex;
     align-self: center;
     justify-items: flex-start;
+}
+#showcase .nav-container .bag-icon {
+    display: flex;
+    align-self: center;
+    justify-items: flex-start;
+    padding-right: 68px;
 }
 
 #showcase .main-nav .nav-container{
@@ -268,6 +287,9 @@ header{
 
 /* Specs-section */
 #specs-section{
+    width: 375px;
+}
+.specs-container{
     height: 155vh;
     width: 90%;
     margin: auto;
@@ -282,7 +304,7 @@ header{
     // display: flex;
     // justify-content: center;
 }
-#specs-section > div > h1{
+#specs-section .specs-container > div > h1{
     font-size: 30px;
     line-height: 30px;
 }
@@ -320,6 +342,7 @@ header{
 // Third section
 #brown-section{
     height: 70vh;
+    width: 370px;
 }
 #brown-section .shoe-price .price{
     color: var(--primary-color);
@@ -328,7 +351,7 @@ header{
     position: relative;
     top: 195px;
     left: 18px;
-    z-index: 2;
+    z-index: 1;
 }
 #brown-section .shoe-price{
     background-color: #312a22;
@@ -348,28 +371,29 @@ header{
     // border-radius: 20%;
     text-align: center;
     margin-top: 95px;
+    height: 1px;
+    width: 90%;
 }
 #brown-section .shoe-price .dots .dot{
-    border: 1px solid #d6d6d6;
+    border: 0px solid #d6d6d6;
     background-color: #d6d6d6;
-    border-radius: 80%;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top:1px;
-    padding-bottom:1px;
+    border-radius: 100%;
+    padding: 5px;
     display: inline;
     margin: 5px;
-    width: 5%;
 }
 
 #brown-section .shoe-price .dots .active{
-    border: 1px solid var(--primary-color);
+    border: 0px solid var(--primary-color);
     background-color: var(--primary-color);
 }
 
 /* forth section */
 #forth-section{
-    height: 155vh;
+    height: 125vh;
+    width: 375px;
+}
+#forth-section .forth-section-container{
     width: 90%;
     margin: auto;
 }
@@ -380,4 +404,164 @@ header{
     margin-right: 0;
     width: 95%;
     transform: scalex(-1);
+}
+#forth-section h1 {
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+#forth-section h5{
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #322515;
+}
+#forth-section .large-paragraph{
+    color: #322515;
+    font-size: 16.1px;
+}
+#forth-section h2 {
+    font-size: 54px;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+#forth-section .cart-btn {
+    margin-top: 25px;
+    color: var(--primary-color);
+    background-color: #2c2924;
+    border: 1px solid #2c2924;
+    border-radius: 6px;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+//fifth-section 
+#fifth-section{
+    height: 65vh;
+    width: 375px;
+    background: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/home.png");
+}
+#fifth-section .fifth-section-container{
+    width: 90%;
+    margin: auto;
+}
+#fifth-section h1 {
+    padding-top: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+#fifth-section h5 {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #322515;
+}
+#fifth-section .small-paragraph {
+    font-size: 21px;
+    line-height: 22px;
+}
+#fifth-section button {
+    background-color: #312a22;
+    border: 1px solid #312a22;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    left: 125px;
+    top: 20px;
+    display: block;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(49, 42, 34, 0.5);
+    }
+    70%{
+        box-shadow: 0 0 0 30px rgba(49, 42, 34, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(49, 42, 34, 0);
+    }
+}
+//Reviews section
+#reviews-section{
+    height: 100vh;
+    width: 375px;
+}
+#reviews-section .reviews-section-container{
+    width: 90%;
+    margin: auto;
+}
+#reviews-section .heading-section h1{
+    padding-top: 100px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 28px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+#reviews-section .ratting-box{
+    color: #999999;
+}
+#reviews-section .heading-section .ratting-box{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#reviews-section .ratting-box .active{
+    color: #f6ba71;
+}
+#reviews-section .heading-section p{
+    text-align: center;
+    margin-top: 2px;
+}
+#reviews-section .review {
+    display: flex;
+    flex-direction: column;
+}
+#reviews-section .review img{
+    margin-top: 0;
+    width: 38%;
+    border-radius: 100%;
+    border: 4px solid #f6ba71;
+    display: flex;
+    align-self: center;
+    position: relative;
+    top: 60px;
+    animation: yellow-pulse 2s infinite;
+}
+@keyframes yellow-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(246, 186, 113, 0.5);
+    }
+    70%{
+        box-shadow: 0 0 0 30px rgba(246, 186, 113, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(246, 186, 113, 0);
+    }
+}
+#reviews-section .review .review-container{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    background-color: #2c2924;
+    color: #fff;
+    padding: 30px;
+}
+#reviews-section .review .ratting-box {
+    margin-top: 70px;
+}
+#reviews-section .review h3{
+    color: #f6ba71;
+    font-size: 25px;
+    font-weight: 100;
 }
