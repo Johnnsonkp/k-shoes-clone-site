@@ -240,8 +240,8 @@ header{
 
 /* Specs-section */
 #specs-section{
-    width: 360px;
-    height: 165vh;
+    width: 375px;
+    height: 170vh;
 }
 .specs-container{
     width: 90%;
@@ -308,7 +308,8 @@ header{
 }
 #brown-section .shoe-price{
     background-color: #312a22;
-    height: 68vh;
+    height: 500px;
+    overflow-y: hidden;
 
 }
 #brown-section .shoe-price .nike-airmax{
@@ -543,7 +544,7 @@ header{
 
 //contact section
 #contact-section{
-    height: 100vh;
+    height: 80vh;
     width: 360px;
 }
 #contact-section .contact-section-container{
@@ -595,11 +596,45 @@ header{
     border-radius: 5px 5px 5px 5px;
     margin: 6px;
 }
+// Footer section 
+#main-footer{
+    height: 160vh;
+    width: 375px;
+    background-color: var(--primary-color);
+}
+#main-footer .footer-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 90px;
+}
+#main-footer h2{
+    margin-top: 45px;
+}
+#main-footer .footer-container li {
+    list-style: none;
+    padding: 5px 0px;
+    color: rgba(0,0,0,0.5);;
+}
+#main-footer .footer-container ul{
+    padding-left: 0;
+}
+#main-footer .footer-container img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 
 
 //media query
+@media screen and (max-width:375px){
+    section{
+        overflow-x: hidden;
+    }
+    body{
+        width: 375px;
+    }
+}
 @media screen and (max-width: 500px){
     #reviews-section {
         min-height: 0;
