@@ -306,10 +306,10 @@ header {
 /* Specs-section */
 #specs-section {
   width: 375px;
+  height: 165vh;
 }
 
 .specs-container {
-  height: 155vh;
   width: 90%;
   margin: auto;
 }
@@ -480,7 +480,7 @@ header {
 }
 
 #fifth-section {
-  height: 65vh;
+  height: 75vh;
   width: 375px;
   background: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/home.png");
 }
@@ -518,7 +518,7 @@ header {
   width: 75px;
   position: relative;
   left: 125px;
-  top: 20px;
+  top: 35px;
   display: block;
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
@@ -555,8 +555,9 @@ header {
 }
 
 #reviews-section {
-  height: 100vh;
+  height: 130vh;
   width: 375px;
+  background-image: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/ratings-section.png");
 }
 
 #reviews-section .reviews-section-container {
@@ -666,5 +667,44 @@ header {
   color: #f6ba71;
   font-size: 25px;
   font-weight: 100;
+}
+
+#reviews-section .dots {
+  border: 1px solid transparent;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  height: 1px;
+  width: 90%;
+}
+
+#reviews-section .dots .dot {
+  border: 0px solid #d6d6d6;
+  background-color: #d6d6d6;
+  border-radius: 100%;
+  padding: 5px;
+  display: inline;
+  margin: 5px;
+}
+
+#reviews-section .review .dots .active {
+  background-color: #f6ba71;
+}
+
+#form-section {
+  height: 100vh;
+  width: 375px;
+}
+
+#form-section-container {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  #reviews-section {
+    min-height: 0;
+    background-position: -480px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
