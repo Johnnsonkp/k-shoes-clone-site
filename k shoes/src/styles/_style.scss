@@ -263,30 +263,11 @@ body {
         cursor: pointer;
     }
 }
-// @media screen and (min-width: 1030px){
-//     #showcase .nav-container .bag-icon{
-//         position: relative;
-//         left: 48.9em;
-//     }
-// }
-// @media screen and (min-width: 1060px){
-//     #showcase .nav-container .bag-icon{
-//         position: relative;
-//         left: 50em;
-//     }
-// }
-// @media screen and (min-width: 1090px){
-//     #showcase .nav-container .bag-icon{
-//         position: relative;
-//         left: 50em;
-//     }
-// }
-// @media screen and (min-width: 1120px){
-
-// }
-// @media screen and (min-width: 1150px){
-
-// }
+@media screen and (max-width: 375px ){
+    .nav-list{
+        display: block;
+    }
+}
 
 .nav-list{
     display: none;
@@ -298,7 +279,7 @@ body {
 header{
     background-color: #f6ba71;
     background: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/home.png");
-    height: 110vh;
+    height: 120vh;
     width: 375px;
     overflow: hidden;
     // overflow-y: hidden;
@@ -377,6 +358,7 @@ header{
 #showcase .nike-airmax {
     display: block;
     width: 100%;
+    max-width: 1130px;
     position: relative;
     z-index: 1;
     left: 60px;
@@ -394,7 +376,7 @@ header{
 }
 #specs-section .nike-airmax{
     display: inline;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-left: 0;
     margin-right: 0;
     width: 95%;

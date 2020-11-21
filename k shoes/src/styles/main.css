@@ -321,6 +321,12 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .nav-list {
+    display: block;
+  }
+}
+
 .nav-list {
   display: none;
 }
@@ -332,7 +338,7 @@ body {
 header {
   background-color: #f6ba71;
   background: url("https://kingsthemes.com/html/k-shoes/images/full-width-images/home.png");
-  height: 110vh;
+  height: 120vh;
   width: 375px;
   overflow: hidden;
 }
@@ -424,6 +430,7 @@ header {
 #showcase .nike-airmax {
   display: block;
   width: 100%;
+  max-width: 1130px;
   position: relative;
   z-index: 1;
   left: 60px;
@@ -444,7 +451,7 @@ header {
 
 #specs-section .nike-airmax {
   display: inline;
-  margin-top: 80px;
+  margin-top: 0px;
   margin-left: 0;
   margin-right: 0;
   width: 95%;
@@ -961,6 +968,216 @@ header {
   }
   #main-footer {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -3em;
+    left: 10em;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -7em;
+    left: 10em;
+    width: 80%;
+  }
+  #showcase .showcase-content h3 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  #showcase h1 {
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+  #showcase .showcase-content h4 {
+    margin-top: 0.5em;
+    font-size: 33px;
+    line-height: 35px;
+    font-weight: 100 !important;
+    color: #6d4310;
+  }
+  #showcase .showcase-content button {
+    margin-top: 0;
+    background-color: #2c2924;
+    border: 1px solid #2c2924;
+    color: #f6ba71;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 22px 30px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -20em;
+    left: 20em;
+    width: 80%;
+  }
+  #showcase br {
+    display: none;
+  }
+  #showcase h1 {
+    font-size: 70px;
+    line-height: 70px;
+    width: 60%;
+  }
+  #showcase .showcase-content h4 {
+    margin-top: 0.5em;
+    font-size: 40px;
+    line-height: 45px;
+    width: 60%;
+  }
+  #showcase .showcase-content button {
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -23em;
+    left: 23em;
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -23em;
+    left: 26em;
+    width: 900px;
+  }
+  #showcase .showcase-content {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -23em;
+    left: 35em;
+    width: 900px;
+  }
+  #showcase .showcase-content {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -23em;
+    left: 45em;
+    width: 900px;
+  }
+  #showcase .showcase-content {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -27em;
+    left: 54em;
+    width: 1200px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -25em;
+    left: 18em;
+    width: 80%;
+  }
+  #showcase .showcase-content {
+    position: relative;
+    top: -5em;
+    width: 85%;
+  }
+  #showcase h1 {
+    font-size: 40px;
+    line-height: 70px;
+    width: 60%;
+  }
+  #showcase .showcase-content h4 {
+    margin-top: 0.5em;
+    font-size: 28px;
+    line-height: 30px;
+    width: 60%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -20em;
+    left: 15em;
+    width: 85%;
+  }
+  #showcase .showcase-content {
+    position: relative;
+    top: -5em;
+    width: 85%;
+  }
+  #showcase h1 {
+    font-size: 40px;
+    line-height: 70px;
+    width: 60%;
+  }
+  #showcase .showcase-content h4 {
+    margin-top: 0.5em;
+    font-size: 28px;
+    line-height: 30px;
+    width: 60%;
+  }
+}
+
+@media (min-height: 900px) and (max-height: 2000px) and (min-width: 1400px) and (max-width: 2000px) {
+  #showcase .nike-airmax {
+    position: relative;
+    top: -19em;
+    left: 29em;
+    width: 75%;
+  }
+  #showcase .showcase-content {
+    position: relative;
+    top: 3em;
+    width: 85%;
+  }
+  #showcase h1 {
+    font-size: 50px;
+    line-height: 70px;
+    width: 60%;
+  }
+  #showcase .showcase-content h4 {
+    margin-top: 0.5em;
+    font-size: 30px;
+    line-height: 30px;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
